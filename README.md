@@ -1,2 +1,2 @@
 # MathMaven
-Fun Math problems 
+Math problems,calculators, and other math-related items
