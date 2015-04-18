@@ -39,10 +39,11 @@
             this.trigonometryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trigonometryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
             this.QuestionBox = new System.Windows.Forms.TextBox();
-            this.AnswerBox = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
+            this.AnswerBox = new System.Windows.Forms.RichTextBox();
+            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -58,7 +59,8 @@
             this.statisticsToolStripMenuItem,
             this.geometryToolStripMenuItem,
             this.trigonometryToolStripMenuItem,
-            this.trigonometryToolStripMenuItem1});
+            this.trigonometryToolStripMenuItem1,
+            this.otherToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1163, 24);
@@ -149,17 +151,6 @@
             this.splitContainer1.SplitterDistance = 121;
             this.splitContainer1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(27, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Question";
-            // 
             // QuestionBox
             // 
             this.QuestionBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -174,15 +165,16 @@
             this.QuestionBox.Size = new System.Drawing.Size(1124, 62);
             this.QuestionBox.TabIndex = 1;
             // 
-            // AnswerBox
+            // label1
             // 
-            this.AnswerBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnswerBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.AnswerBox.Location = new System.Drawing.Point(30, 50);
-            this.AnswerBox.Name = "AnswerBox";
-            this.AnswerBox.Size = new System.Drawing.Size(1118, 367);
-            this.AnswerBox.TabIndex = 0;
-            this.AnswerBox.Text = "";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(27, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Question";
             // 
             // CalculateButton
             // 
@@ -195,6 +187,22 @@
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
+            // 
+            // AnswerBox
+            // 
+            this.AnswerBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.AnswerBox.Location = new System.Drawing.Point(30, 50);
+            this.AnswerBox.Name = "AnswerBox";
+            this.AnswerBox.Size = new System.Drawing.Size(1118, 367);
+            this.AnswerBox.TabIndex = 0;
+            this.AnswerBox.Text = "";
+            // 
+            // otherToolStripMenuItem
+            // 
+            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.otherToolStripMenuItem.Text = "Other";
             // 
             // MurvunMuthMain
             // 
@@ -235,6 +243,7 @@
         private System.Windows.Forms.TextBox QuestionBox;
         private System.Windows.Forms.RichTextBox AnswerBox;
         private System.Windows.Forms.Button CalculateButton;
+        private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
     }
 }
 
