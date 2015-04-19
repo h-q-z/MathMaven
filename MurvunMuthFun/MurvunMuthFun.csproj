@@ -50,7 +50,7 @@
     <Compile Include="MuthFunMain.Designer.cs">
       <DependentUpon>MuthFunMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="NumberTheory\ARML\2007\TeamWorker.cs" />
+    <Compile Include="NumberTheory\ARML_muncher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MuthFunMain.resx">
@@ -77,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NumberTheory\ARML\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

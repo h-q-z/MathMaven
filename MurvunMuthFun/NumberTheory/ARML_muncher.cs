@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MurvunMuthFun.NumberTheory.ARML._2007
+namespace MurvunMuthFun.NumberTheory
 {
-    class TeamWorker
+    class ARML_muncher
     {
-        public String computeT4()
+        public String compute2007_Team_4()
         {
             String answer = "";
             int count = 0;
@@ -21,7 +21,7 @@ namespace MurvunMuthFun.NumberTheory.ARML._2007
                     count++;
                 }
                 if (count == 2007)
-                    return answer + "\nSo the answer is " + number ;
+                    return answer + "\nSo the answer is " + number;
                 number++;
             }
         }

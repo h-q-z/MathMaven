@@ -1,4 +1,4 @@
-﻿using MurvunMuthFun.NumberTheory.ARML._2007;
+﻿using MurvunMuthFun.NumberTheory;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,8 +44,8 @@ namespace MurvunMuthFun
         {
             if (question.Equals("NUMBERTHEORY_ARML_2007_T4"))
             {
-                TeamWorker teamWorker = new TeamWorker();
-                String result = teamWorker.computeT4();
+                ARML_muncher aMuncher = new ARML_muncher();
+                String result = aMuncher.compute2007_Team_4();
                 AnswerBox.Text = result;
             }
         }
