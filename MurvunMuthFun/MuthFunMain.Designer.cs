@@ -38,12 +38,13 @@
             this.arml2007T4MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trigonometryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trigonometryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.QuestionBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.AnswerBox = new System.Windows.Forms.RichTextBox();
-            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -60,7 +61,8 @@
             this.geometryToolStripMenuItem,
             this.trigonometryToolStripMenuItem,
             this.trigonometryToolStripMenuItem1,
-            this.otherToolStripMenuItem});
+            this.otherToolStripMenuItem,
+            this.eXITToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1163, 24);
@@ -131,6 +133,12 @@
             this.trigonometryToolStripMenuItem1.Size = new System.Drawing.Size(92, 20);
             this.trigonometryToolStripMenuItem1.Text = "Trigonometry";
             // 
+            // otherToolStripMenuItem
+            // 
+            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.otherToolStripMenuItem.Text = "Other";
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -198,11 +206,12 @@
             this.AnswerBox.TabIndex = 0;
             this.AnswerBox.Text = "";
             // 
-            // otherToolStripMenuItem
+            // eXITToolStripMenuItem
             // 
-            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
-            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.otherToolStripMenuItem.Text = "Other";
+            this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
+            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.eXITToolStripMenuItem.Text = "EXIT";
+            this.eXITToolStripMenuItem.Click += new System.EventHandler(this.eXITToolStripMenuItem_Click);
             // 
             // MurvunMuthMain
             // 
@@ -244,6 +253,7 @@
         private System.Windows.Forms.RichTextBox AnswerBox;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
     }
 }
 

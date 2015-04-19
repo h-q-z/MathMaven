@@ -38,6 +38,7 @@ namespace MurvunMuthFun
         {
             question = "NUMBERTHEORY_ARML_2007_T4";
             QuestionBox.Text = "Consider the increasing list of positive integers that do not contain the digit 0; i.e., 1,2,3,...,8,9,11,12,.... Compute the 2007th integer in this list.";
+            AnswerBox.Text = "";
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
@@ -48,6 +49,11 @@ namespace MurvunMuthFun
                 String result = teamWorker.computeT4();
                 AnswerBox.Text = result;
             }
+        }
+
+        private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
