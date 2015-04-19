@@ -45,8 +45,8 @@ namespace MurvunMuthFun
             if (question.Equals("NUMBERTHEORY_ARML_2007_T4"))
             {
                 TeamWorker teamWorker = new TeamWorker();
-                int result = teamWorker.computeT4();
-                AnswerBox.Text = result.ToString();
+                String result = teamWorker.computeT4();
+                AnswerBox.Text = result;
             }
         }
     }
