@@ -51,6 +51,7 @@
       <DependentUpon>MuthFunMain.cs</DependentUpon>
     </Compile>
     <Compile Include="NumberTheory\ARML\2007\TeamWorker.cs" />
+    <Compile Include="Other\SillyAnswerMachine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MuthFunMain.resx">
