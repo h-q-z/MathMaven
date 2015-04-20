@@ -79,5 +79,15 @@ namespace MurvunMuthFun
             // 4. Display 4 in AnswerBox
             AnswerBox.Text = a;
         }
+
+        private void QuestionBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AnswerBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

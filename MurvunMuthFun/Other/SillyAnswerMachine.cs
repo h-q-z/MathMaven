@@ -23,6 +23,7 @@ namespace MurvunMuthFun.Other
                 sillyQuestions.Add("How many milliliters are there in a cup?"); //5
                 sillyQuestions.Add("How many books are in a shelf?"); //6 
                 sillyQuestions.Add("How many pages are in a novel?"); //7
+                sillyQuestions.Add("What is the diameter of the sun?");
             }
             if (sillyAnswers.Count() == 0) {
                 sillyAnswers.Add("4.");
@@ -32,6 +33,7 @@ namespace MurvunMuthFun.Other
                 sillyAnswers.Add("240");
                 sillyAnswers.Add("80");
                 sillyAnswers.Add("500");
+                sillyAnswers.Add("1,391,684,000");
             }
 
         }
@@ -39,14 +41,14 @@ namespace MurvunMuthFun.Other
         public String getQuestion()
         {
             Random rand = new Random();
-            int nQIndex = rand.Next(7);
+            int nQIndex = rand.Next(8);
             return sillyQuestions[nQIndex];
         }
 
         public String getAnswer()
         {
             Random rand = new Random();
-            int nAIndex = (rand.Next(700) % 7);
+            int nAIndex = (rand.Next(800) % 8);
             return sillyAnswers[nAIndex];
             
         }

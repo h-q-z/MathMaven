@@ -39,13 +39,13 @@
             this.trigonometryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trigonometryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sillyAnswerMachineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.QuestionBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.AnswerBox = new System.Windows.Forms.RichTextBox();
-            this.sillyAnswerMachineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -142,6 +142,13 @@
             this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.otherToolStripMenuItem.Text = "Other";
             // 
+            // sillyAnswerMachineToolStripMenuItem
+            // 
+            this.sillyAnswerMachineToolStripMenuItem.Name = "sillyAnswerMachineToolStripMenuItem";
+            this.sillyAnswerMachineToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.sillyAnswerMachineToolStripMenuItem.Text = "Silly Answer Machine";
+            this.sillyAnswerMachineToolStripMenuItem.Click += new System.EventHandler(this.sillyAnswerMachineToolStripMenuItem_Click);
+            // 
             // eXITToolStripMenuItem
             // 
             this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
@@ -182,6 +189,7 @@
             this.QuestionBox.Name = "QuestionBox";
             this.QuestionBox.Size = new System.Drawing.Size(1124, 62);
             this.QuestionBox.TabIndex = 1;
+            this.QuestionBox.TextChanged += new System.EventHandler(this.QuestionBox_TextChanged);
             // 
             // label1
             // 
@@ -215,13 +223,7 @@
             this.AnswerBox.Size = new System.Drawing.Size(1118, 367);
             this.AnswerBox.TabIndex = 0;
             this.AnswerBox.Text = "";
-            // 
-            // sillyAnswerMachineToolStripMenuItem
-            // 
-            this.sillyAnswerMachineToolStripMenuItem.Name = "sillyAnswerMachineToolStripMenuItem";
-            this.sillyAnswerMachineToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.sillyAnswerMachineToolStripMenuItem.Text = "Silly Answer Machine";
-            this.sillyAnswerMachineToolStripMenuItem.Click += new System.EventHandler(this.sillyAnswerMachineToolStripMenuItem_Click);
+            this.AnswerBox.TextChanged += new System.EventHandler(this.AnswerBox_TextChanged);
             // 
             // MurvunMuthMain
             // 
