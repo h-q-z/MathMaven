@@ -46,6 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.AnswerBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionGraphPanel = new System.Windows.Forms.Panel();
+            this.AnswerKeyBox = new System.Windows.Forms.TextBox();
+            this.ShowStepsBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -165,11 +168,14 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.QuestionGraphPanel);
             this.splitContainer1.Panel1.Controls.Add(this.QuestionBox);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.ShowStepsBtn);
+            this.splitContainer1.Panel2.Controls.Add(this.AnswerKeyBox);
             this.splitContainer1.Panel2.Controls.Add(this.CalculateButton);
             this.splitContainer1.Panel2.Controls.Add(this.AnswerBox);
             this.splitContainer1.Size = new System.Drawing.Size(1163, 598);
@@ -187,7 +193,7 @@
             this.QuestionBox.Location = new System.Drawing.Point(25, 43);
             this.QuestionBox.Multiline = true;
             this.QuestionBox.Name = "QuestionBox";
-            this.QuestionBox.Size = new System.Drawing.Size(1124, 62);
+            this.QuestionBox.Size = new System.Drawing.Size(879, 62);
             this.QuestionBox.TabIndex = 1;
             this.QuestionBox.TextChanged += new System.EventHandler(this.QuestionBox_TextChanged);
             // 
@@ -206,7 +212,7 @@
             // 
             this.CalculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculateButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CalculateButton.Location = new System.Drawing.Point(29, 6);
+            this.CalculateButton.Location = new System.Drawing.Point(63, 33);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(92, 37);
             this.CalculateButton.TabIndex = 1;
@@ -218,12 +224,46 @@
             // 
             this.AnswerBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.AnswerBox.Location = new System.Drawing.Point(30, 50);
+            this.AnswerBox.Location = new System.Drawing.Point(30, 95);
             this.AnswerBox.Name = "AnswerBox";
             this.AnswerBox.Size = new System.Drawing.Size(1118, 367);
             this.AnswerBox.TabIndex = 0;
             this.AnswerBox.Text = "";
             this.AnswerBox.TextChanged += new System.EventHandler(this.AnswerBox_TextChanged);
+            // 
+            // QuestionGraphPanel
+            // 
+            this.QuestionGraphPanel.Location = new System.Drawing.Point(937, 8);
+            this.QuestionGraphPanel.Name = "QuestionGraphPanel";
+            this.QuestionGraphPanel.Size = new System.Drawing.Size(210, 108);
+            this.QuestionGraphPanel.TabIndex = 2;
+            // 
+            // AnswerKeyBox
+            // 
+            this.AnswerKeyBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnswerKeyBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AnswerKeyBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerKeyBox.ForeColor = System.Drawing.Color.Maroon;
+            this.AnswerKeyBox.Location = new System.Drawing.Point(453, 16);
+            this.AnswerKeyBox.Name = "AnswerKeyBox";
+            this.AnswerKeyBox.ReadOnly = true;
+            this.AnswerKeyBox.Size = new System.Drawing.Size(309, 26);
+            this.AnswerKeyBox.TabIndex = 2;
+            this.AnswerKeyBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ShowStepsBtn
+            // 
+            this.ShowStepsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowStepsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ShowStepsBtn.Location = new System.Drawing.Point(998, 33);
+            this.ShowStepsBtn.Name = "ShowStepsBtn";
+            this.ShowStepsBtn.Size = new System.Drawing.Size(92, 37);
+            this.ShowStepsBtn.TabIndex = 3;
+            this.ShowStepsBtn.Text = "Steps";
+            this.ShowStepsBtn.UseVisualStyleBackColor = true;
+            this.ShowStepsBtn.Click += new System.EventHandler(this.ShowStepsBtn_Click);
             // 
             // MurvunMuthMain
             // 
@@ -240,6 +280,7 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -267,6 +308,9 @@
         private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sillyAnswerMachineToolStripMenuItem;
+        private System.Windows.Forms.Panel QuestionGraphPanel;
+        private System.Windows.Forms.Button ShowStepsBtn;
+        private System.Windows.Forms.TextBox AnswerKeyBox;
     }
 }
 

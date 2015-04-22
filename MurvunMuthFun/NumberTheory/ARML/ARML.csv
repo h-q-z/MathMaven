@@ -1,0 +1,2 @@
+﻿ItemID,TestName,Year,Category,GraphPath,AnswerKey,Question
+ARML~2007~T~1,ARML,2007,Algebra,,,"For integral x>0, computer the number of pairs of points A and B that lie on the graph of y=x^2, A to the left and below B, such that the slope of line AB is 2007."
